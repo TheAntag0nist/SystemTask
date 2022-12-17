@@ -8,6 +8,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <errno.h>
+#include "log.h"
+
+#define IPC_FAIL -1
 
 struct shm_metadata{
     int id;
@@ -25,13 +28,5 @@ void destroy_shared_memory(int id);
 void write_to_mem(int id, char* buf);
 void read_from_mem(int id, char* buf);
 char* get_mem(int id);
-
-// <number>. Display messages
-void warning(char* msg);
-void debug(char* msg);
-void fatal(char* msg);
-void error(char* msg);
-void info(char* msg);
-void inner_error();
 
 #endif

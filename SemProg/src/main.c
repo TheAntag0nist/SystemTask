@@ -8,7 +8,7 @@ int main(){
     info("Start semaphore programm");
     // 2. Create a semaphore
     info("Create semaphore");
-    int sem_id = create_sem("sem", 3, 0);
+    int sem_id = create_sem("/tmp", 3, 0);
     // 3. Get the semaphore information
     info("Get semaphore information");
     get_sem_inf(sem_id, &sem_data);
@@ -31,7 +31,7 @@ int main(){
     int num = get_num_sems(sem_id);
     struct sembuf* buff = malloc(num * sizeof(struct sembuf));
     for(int i = 0; i < num; ++i){
-        buff[i].sem_op = i - 1;
+        buff[i].sem_op = 1;
         buff[i].sem_num = i;
         buff[i].sem_flg = 0;
     }

@@ -9,7 +9,7 @@
 
 int main(){
     char* str = "Hello world!";
-    char* buffer[1024];
+    char buffer[1024];
     int fd;
 
     // FIFO file path

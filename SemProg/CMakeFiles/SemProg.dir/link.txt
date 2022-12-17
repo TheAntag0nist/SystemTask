@@ -1,1 +1,0 @@
-gcc    CMakeFiles/SemProg.dir/src/main.c.o CMakeFiles/SemProg.dir/src/core.c.o CMakeFiles/SemProg.dir/src/log.c.o  -o bin/SemProg 

@@ -1,4 +1,4 @@
-#include <core.h>
+#include "core.h"
 
 int create_sem(char* path, int cnt_sems, int init_val){
     // 1. Get key

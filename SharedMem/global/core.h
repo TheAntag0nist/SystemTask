@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <math.h>
-#include <log.h>
+#include "log.h"
 
 #define IPC_FAIL -1
 #define FAILLURE 0
