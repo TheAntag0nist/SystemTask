@@ -7,7 +7,7 @@ sh build.sh
 cd ../SharedMem
 sh build.sh
 
-cd ../MsgQueue
+cd ../MessageQueue
 sh build.sh
 
 cd ../FIFO
